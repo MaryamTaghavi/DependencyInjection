@@ -1,12 +1,21 @@
-using DependencyInjectionLifeTime.MiddleWares;
+﻿using DependencyInjectionLifeTime.MiddleWares;
 using DependencyInjectionLifeTime.Services;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<TransientService>();
+//builder.Services.AddTransient(typeof(TransientService));
+
 builder.Services.AddSingleton<SingletonService>();
+
+//TryAdd اگر از قبل موجود باشه اولی را انتخاب میکند در صورتی که Try رو نگذاریم آخری را انتخاب میکند.
+//builder.Services.TryAddScoped<SingletonService>();
+
+//builder.Services.AddSingleton(new SingletonService());
+
 builder.Services.AddScoped<ScopedService>();
 
 var app = builder.Build();
