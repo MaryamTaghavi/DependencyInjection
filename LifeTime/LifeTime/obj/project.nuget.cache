@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "KeJwv3wUglCwF1doEUzMqOjH/MC3sV+shV5F/Z8LoEjm/NZ677ePgmKDlslH0n6fxb8I0UwaHC08N7ODF5+b0A==",
+  "dgSpecHash": "X2iR023b9Fc=",
   "success": true,
-  "projectFilePath": "H:\\Examples\\DependencyInjection\\LifeTime\\LifeTime\\LifeTime.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "F:\\DependencyInjection\\LifeTime\\LifeTime\\LifeTime.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LifeTime")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34478cb071ed3caafa769c578d5531e2fcd71bcf")]
 [assembly: System.Reflection.AssemblyProductAttribute("LifeTime")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LifeTime")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Examples\\DependencyInjection\\LifeTime\\LifeTime\\LifeTime.csproj": {}
+    "F:\\DependencyInjection\\LifeTime\\LifeTime\\LifeTime.csproj": {}
   },
   "projects": {
-    "H:\\Examples\\DependencyInjection\\LifeTime\\LifeTime\\LifeTime.csproj": {
+    "F:\\DependencyInjection\\LifeTime\\LifeTime\\LifeTime.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Examples\\DependencyInjection\\LifeTime\\LifeTime\\LifeTime.csproj",
+        "projectUniqueName": "F:\\DependencyInjection\\LifeTime\\LifeTime\\LifeTime.csproj",
         "projectName": "LifeTime",
-        "projectPath": "H:\\Examples\\DependencyInjection\\LifeTime\\LifeTime\\LifeTime.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "H:\\Examples\\DependencyInjection\\LifeTime\\LifeTime\\obj\\",
+        "projectPath": "F:\\DependencyInjection\\LifeTime\\LifeTime\\LifeTime.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "F:\\DependencyInjection\\LifeTime\\LifeTime\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +35,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -50,6 +56,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -58,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.316\\RuntimeIdentifierGraph.json"
         }
       }
     }
