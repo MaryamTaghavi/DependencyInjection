@@ -1,4 +1,4 @@
-using LifeTime2;
+﻿using LifeTime2;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +9,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<DatabaseContext>();
+// Lifetime validation
+// با فعال کردن این گزینه سبب میشود که لایف تایم ها دقیقتر بررسی شوند یعنی قانون رعایت شود
+// اونی که تزریق میشه باید لایف تایمش کوچیک تر باشد
+// به عبارت دیگر سرویس اصلی باید لایف تایم طولانی تری داشته باشد
+
+builder.Host.UseDefaultServiceProvider(options =>
+{
+    options.ValidateScopes = true; 
+});
+
+builder.Services.AddSingleton<DatabaseContext>();
 builder.Services.AddScoped<Repository>();
 
 var app = builder.Build();
@@ -20,6 +30,7 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
 });
+
 
 app.UseHttpsRedirection();
 
