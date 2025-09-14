@@ -1,4 +1,6 @@
-﻿using LifeTime2;
+﻿using Amazon.S3;
+using LifeTime2;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +23,10 @@ builder.Host.UseDefaultServiceProvider(options =>
 
 builder.Services.AddSingleton<DatabaseContext>();
 builder.Services.AddScoped<Repository>();
+
+builder.Services.AddSingleton<IAmazonS3>(sp => new ArvanStorageClientBuilder(
+   sp.GetRequiredService<IOptions<ArvanStorageOptions>>())
+   .Build());
 
 var app = builder.Build();
 
